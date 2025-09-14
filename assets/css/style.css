@@ -1,5 +1,5 @@
 :root {
-    --theme-color: #e3572b;
+    --theme-color: #007473;
     --theme-color2: #c2df93;
     --theme-color3: #ecf8f8;
     --title-color: var(--dark-color);
@@ -5193,7 +5193,7 @@ td.ui-datepicker-days-cell-over.ui-datepicker-today a {
 
 .border {
     position: relative;
-    border-bottom: 1px solid var(--bs-border-color7) !important
+    border-bottom: 1px solid #007473 !important
 }
 
 .border.white {
@@ -15313,42 +15313,42 @@ a.text-theme:hover,
     transition: background-color .4s ease-in-out
 }
 
-.service-section.style-2 .service-single-box:hover {
+.service-section.style-2 .service-single-box {
     background-color: var(--dark-color)
 }
 
-.service-section.style-2 .service-single-box:hover .icon {
-    color: var(--theme-color2);
+.service-section.style-2 .service-single-box .icon {
+    color: #007473;
     filter: brightness(0) saturate(100%) invert(91%) sepia(12%) saturate(1224%) hue-rotate(31deg) brightness(104%) contrast(75%)
 }
 
-.service-section.style-2 .service-single-box:hover .title {
+.service-section.style-2 .service-single-box .title {
     color: var(--white-color)
 }
 
-.service-section.style-2 .service-single-box:hover .text {
-    color: var(--gray-color2)
+.service-section.style-2 .service-single-box .text {
+    color: #fff;
 }
 
-.service-section.style-2 .service-single-box:hover .serial {
-    color: var(--theme-color2)
+.service-section.style-2 .service-single-box .serial {
+    color: #007473;
 }
 
-.service-section.style-2 .service-single-box:hover .service-btn {
-    color: var(--theme-color2);
-    border-color: var(--theme-color2)
+.service-section.style-2 .service-single-box .service-btn {
+    color: #e6bc33;
+    border-color: #e6bc33;
 }
 
-.service-section.style-2 .service-single-box:hover .border::before {
+.service-section.style-2 .service-single-box .border::before {
     left: 0;
     width: 100%
 }
 
-.service-section.style-2 .service-single-box:hover .path__shape {
+.service-section.style-2 .service-single-box .path__shape {
     opacity: 1
 }
 
-.service-section.style-2 .service-single-box:hover .path__shape::after {
+.service-section.style-2 .service-single-box .path__shape::after {
     right: 50px;
     bottom: 50px
 }
@@ -73473,5 +73473,8 @@ a.text-theme:hover,
 }
 .footer-section .footer-bottom {
     background-color:#007473!important;
+}
+.bg-yellow{
+    background-color:#e6bc33;
 }
 /*# sourceMappingURL=style.css.map */
