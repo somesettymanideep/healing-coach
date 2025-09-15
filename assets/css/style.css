@@ -15317,10 +15317,10 @@ a.text-theme:hover,
     background-color: var(--dark-color)
 }
 
-.service-section.style-2 .service-single-box .icon {
+/* .service-section.style-2 .service-single-box .icon {
     color: #007473;
     filter: brightness(0) saturate(100%) invert(91%) sepia(12%) saturate(1224%) hue-rotate(31deg) brightness(104%) contrast(75%)
-}
+} */
 
 .service-section.style-2 .service-single-box .title {
     color: var(--white-color)
@@ -15373,7 +15373,7 @@ a.text-theme:hover,
     content: "";
     width: 50px;
     height: 50px;
-    background: var(--bs-border-color);
+    background: #007473;
     transition: all .4s ease-in-out;
     right: 0;
     bottom: 0
@@ -15384,7 +15384,7 @@ a.text-theme:hover,
     content: "";
     width: 40px;
     height: 40px;
-    background: var(--bs-border-color);
+    background: #007473;
     transition: all .4s ease-in-out;
     right: 0;
     bottom: 0
