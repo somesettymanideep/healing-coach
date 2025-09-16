@@ -3445,6 +3445,9 @@ textarea.is-invalid {
 .link-effect:hover .effect-1 {
     top: -100%
 }
+.bg-y{
+ background-color: #e6bc33!important;   
+}
 
 .theme-btn {
     font-size: 16px;
@@ -3454,7 +3457,7 @@ textarea.is-invalid {
     padding: 15px 40px;
     margin-bottom: 0px;
     color: var(--dark-color);
-    background-color: var(--theme-color2);
+    background-color: #e6bc33!important;
     display: inline-flex;
     justify-content: center;
     gap: 10px;
@@ -73476,5 +73479,12 @@ a.text-theme:hover,
 }
 .bg-yellow{
     background-color:#e6bc33;
+}
+.font-m{
+    font-size:22px;
+}
+.bg-shade{
+    background-color: #007473;
+    color:#fff;
 }
 /*# sourceMappingURL=style.css.map */
