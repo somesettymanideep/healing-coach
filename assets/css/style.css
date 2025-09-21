@@ -8061,7 +8061,7 @@ a.text-theme:hover,
 }
 
 .main-menu .active a {
-    color: var(--theme-color)
+    color: #e6bc33;
 }
 
 .main-menu>ul {
@@ -8945,7 +8945,7 @@ a.text-theme:hover,
 }
 
 .header-style4 .main-wrapper .nav-menu .main-menu>ul>li.active>a {
-    color: var(--theme-color)
+    color: #e6bc33;
 }
 
 .header-style4 .main-wrapper .nav-menu .main-menu>ul>li>a {
@@ -10059,7 +10059,8 @@ a.text-theme:hover,
 }
 
 .footer-section {
-    overflow: hidden
+    overflow: hidden;
+    border-top:2px solid #e6bc33;
 }
 
 .footer-section .footer-brand {
@@ -19900,7 +19901,7 @@ a.text-theme:hover,
 }
 
 .map-box .map-canvas {
-    height: 600px;
+    height: 400px;
     transition: all .4s ease 0s
 }
 
