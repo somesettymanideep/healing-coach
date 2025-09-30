@@ -20898,12 +20898,12 @@ a.text-theme:hover,
     gap: 5px
 }
 
-.blog-single-box .blog-content .continue-reading::before {
+/* .blog-single-box .blog-content .continue-reading::before {
     content: "";
     font-family: var(--icon-font);
     font-size: 20px;
     font-weight: 400
-}
+} */
 
 .dark-mode .blog-single-box {
     background-color: var(--dark-color3)
