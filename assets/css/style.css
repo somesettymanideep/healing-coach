@@ -15339,7 +15339,7 @@ a.text-theme:hover,
 }
 
 .service-section.style-2 .service-single-box .service-btn {
-    color: #e6bc33;
+    /* color: #e6bc33; */
     border-color: #e6bc33;
 }
 
