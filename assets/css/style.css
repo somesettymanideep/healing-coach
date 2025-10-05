@@ -73405,7 +73405,14 @@ a.text-theme:hover,
     .space-tm-275 {
         padding-top: calc(var(--section-space-small-mobile) - 275px) !important
     }
+.h-logo{
+    width:70px!important;
+   
 
+}
+    .header-logo {
+        padding:0px!important;
+    }
     .space-bm-275 {
         padding-bottom: calc(var(--section-space-small-mobile) - 275px) !important
     }
@@ -73522,5 +73529,9 @@ a.text-theme:hover,
 }
 .text-bright{
     color:#001a27;
+}
+.h-logo{
+    width:90px;
+
 }
 /*# sourceMappingURL=style.css.map */
