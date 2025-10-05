@@ -1379,6 +1379,12 @@ CSS TABLE OF CONTENTS
                     nextEl: ".array-next",
                 },
                 breakpoints: {
+                    767: {
+                        slidesPerView: 3,
+                    },
+                    575: {
+                        slidesPerView: 1,
+                    },
                     0: {
                         slidesPerView: 1,
                     },

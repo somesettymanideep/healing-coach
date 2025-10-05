@@ -14191,7 +14191,7 @@ a.text-theme:hover,
     line-height: 28px;
     color: var(--dark-color);
     position: relative;
-    padding-left: 25px
+    padding-left: 29px
 }
 
 @media(max-width: 360px) {
@@ -14206,14 +14206,22 @@ a.text-theme:hover,
 
 .about-section.style-4 .features-list li::before {
     position: absolute;
-    content: "";
     top: 50%;
     transform: translateY(-50%);
-    transition: all .4s ease 0s;
-    left: 0;
-    width: 18px;
-    height: 18px;
-    background: url(../images/icons/check-circle.png)
+    content: "";
+    left: 0px;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    background-color: #ecf8f8;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--icon-font);
+    color:var(--dark-color);
+    transition: 0.4s;
+    border-radius: 14px;
+    
 }
 
 .about-section.style-5 .features-list li {
@@ -18134,7 +18142,8 @@ a.text-theme:hover,
 }
 
 .process-section.style-4 .process-single-box {
-    background-color: var(--white-color)
+    background-color: var(--white-color);
+    min-height:450px;
 }
 
 .process-section.style-4 .process-single-box .box-count {
@@ -18245,7 +18254,7 @@ a.text-theme:hover,
 
 .testimonial-card .content .rating i {
     color: var(--orange-color);
-    font-size: 20px;
+    font-size: 15px;
     margin-right: 2px
 }
 
@@ -18570,7 +18579,7 @@ a.text-theme:hover,
     gap: 10px;
     padding: 25px 30px;
     border-radius: 10px;
-    background-color: var(--theme-color2);
+    background-color: var(--dark-color);
     border: 1px solid var(--dark-color)
 }
 
@@ -18581,7 +18590,7 @@ a.text-theme:hover,
 
 .review-card .review-content .text {
     font-size: 15px;
-    color: var(--dark-color);
+    color: #fff;
     font-weight: 500;
     margin-bottom: 6px
 }
@@ -18593,7 +18602,7 @@ a.text-theme:hover,
 }
 
 .review-card .rating-inner .stars {
-    color: var(--theme-color)
+    color: #e6bc33;
 }
 
 .review-card .rating-inner .stars i {
@@ -18602,7 +18611,7 @@ a.text-theme:hover,
 
 .review-card .rating-inner .rating-text {
     font-size: 16px;
-    color: var(--dark-color);
+    color: #fff;
     font-weight: 500
 }
 
@@ -18721,7 +18730,8 @@ a.text-theme:hover,
     overflow: hidden;
     filter: drop-shadow(0px 20px 25px rgba(214, 232, 232, 0.4));
     background-color: var(--bs-bg-color6);
-    border: 1px solid var(--bs-border-color7)
+    border: 1px solid var(--bs-border-color7);
+    min-height:430px;
 }
 
 .style-4 .testimonial-card .inner-box {
@@ -18772,6 +18782,12 @@ a.text-theme:hover,
 .style-4 .testimonial-card .inner-box .content .user-info {
     display: inline-block
 }
+.style-4 .testimonial-card .inner-box .content .user-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 
 .style-4 .testimonial-card .inner-box .content .user-info .user-name {
     color: var(--dark-color)
@@ -19419,8 +19435,8 @@ a.text-theme:hover,
     height: 50px;
     border-radius: 50%;
     font-size: 24px;
-    color: var(--white-color);
-    background-color: var(--dark-color)
+    color: #e6bc33;
+    background-color:#007473;
 }
 
 .contact-section.style-2 .contact-content-wrap .contact-info .contact-item .info {
@@ -73498,5 +73514,13 @@ a.text-theme:hover,
 .bg-yell{
     background-color:#e6bc33;
 }
-
+.bg-gr-ye{
+    background-color:#fbf6ee;
+}
+.p-diff{
+    padding:10px 30px;
+}
+.text-bright{
+    color:#001a27;
+}
 /*# sourceMappingURL=style.css.map */
