@@ -68,6 +68,7 @@
     --ripple-ani-duration: 5s
 }
 
+
 .p-top-left {
     position: absolute;
     top: 0;
@@ -73534,4 +73535,50 @@ a.text-theme:hover,
     width:90px;
 
 }
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.animation-preloader {
+  z-index: 99999999;
+}
+
+.animation-preloader .txt-loading {
+  font: bold 3em 'Great Vibes', cursive;
+  text-align: center;
+  user-select: none;
+}
+
+ .letters-loading {
+  color: #ffffff;
+  position: relative;
+  font-family: 'Great Vibes', cursive!important;
+}
+
+ .letters-loading::before {
+  animation: letters-loading 4s infinite;
+  color:#e6bc33!important; /* replace with your theme color */
+  content: attr(data-text-preloader);
+  left: 0;
+  opacity: 0;
+  font-family: 'Great Vibes', cursive!important;
+  position: absolute;
+  top: -3px;
+  transform: rotateY(-90deg);
+}
+/* Add vertical spacing between rows */
+
+
+ .pricing-box-right .pricing-list li {
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--gray-color);
+    font-weight: 400;
+    margin-bottom: 8px;
+    transition: all .4s ease-in-out;
+}
+ .pricing-box-right .pricing-list li i {
+    margin-right: 10px;
+    color: var(--theme-color);
+    transition: all .4s ease-in-out;
+}
+
 /*# sourceMappingURL=style.css.map */
