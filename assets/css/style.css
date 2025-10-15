@@ -73604,3 +73604,7 @@ a.text-theme:hover,
 .theme-btn i {
     color:var(--dark-color)!important;
 }
+ .txt-loading {
+    font-family: 'Great Vibes', cursive!important;
+ }
+ 
