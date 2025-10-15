@@ -15233,10 +15233,10 @@ a.text-theme:hover,
 
 .service-single-box .serial {
     position: absolute;
-    top: 35px;
+    top: 15px;
     right: 35px;
     color: var(--dark-color);
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500
 }
 
@@ -73582,3 +73582,25 @@ a.text-theme:hover,
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.serial {
+    font-size: 14px;
+    line-height: 1;
+    color: var(--dark-color);
+    font-weight: 500;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid var(--bs-border-color7);
+    background: var(--bs-bg-color4);
+    border-radius: 17px;
+    transition: 0.4s ease-in-out;
+    margin: 0px;
+}
+
+
+.service-single-box .service-btn .link-text {
+    color:var(--dark-color)!important;
+}
+.theme-btn i {
+    color:var(--dark-color)!important;
+}
