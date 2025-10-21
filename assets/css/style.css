@@ -73608,3 +73608,9 @@ a.text-theme:hover,
     font-family: 'Great Vibes', cursive!important;
  }
  
+.whatsapp {
+    position: fixed;
+    right: 2%;
+    bottom: 20%;
+    z-index: 99;
+}
