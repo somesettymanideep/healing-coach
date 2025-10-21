@@ -1380,7 +1380,7 @@ CSS TABLE OF CONTENTS
                 },
                 breakpoints: {
                     767: {
-                        slidesPerView: 3,
+                        slidesPerView: 2,
                     },
                     575: {
                         slidesPerView: 1,
