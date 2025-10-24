@@ -355,47 +355,52 @@ Transformation Journey</p>
                     <div class="col-lg-7">
                         <div class="contact-form">
                             <h2 class="title mt--5 mb-35">Let’s Contact with us</h2>
-                           <form id="contact_form" class="contact_form" action="https://formspree.io/f/mzbnjrnb" method="post">
-    <div class="form-grid">
-        <div class="form-group">
-            <span class="icon"><i class="fa-solid fa-user"></i></span>
-            <input type="text" id="fullName" name="name" placeholder="Your Name" required autocomplete="on">
-        </div>
-        <div class="form-group">
-            <span class="icon"><i class="fa-regular fa-envelope"></i></span>
-            <input type="email" id="userEmail" name="email" placeholder="Email Address" required autocomplete="on">
-        </div>
-    </div>
-    <div class="form-grid">
-        <div class="form-group">
-            <span class="icon"><i class="fa-solid fa-phone"></i></span>
-            <input type="text" id="phone" name="phone" placeholder="Phone No." required autocomplete="off">
-        </div>
-        <div class="form-group">
-            <select class="custom-select" id="service" name="service" autocomplete="off">
-                <option value="" disabled selected>What interests you most?</option>
-                <option value="energy">Energy Healing and Inner Child Work</option>
-                <option value="coaching">Life and Finance Coaching</option>
-                <option value="numerology">Numerology Reading</option>
-                <option value="courses">Online Courses</option>
-                <option value="workshops">Workshops and Events</option>
-                <option value="certification">Certifications and Programs</option>
-            </select>
-        </div>
+                           <form id="contact_form" class="contact_form">
+  <div class="form-grid">
+    <div class="form-group">
+      <span class="icon"><i class="fa-solid fa-user"></i></span>
+      <input type="text" id="fullName" name="name" placeholder="Your Name" required autocomplete="on">
     </div>
     <div class="form-group">
-        <textarea id="msg" name="msg"  placeholder="Write Message" required></textarea>
+      <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+      <input type="email" id="userEmail" name="email" placeholder="Email Address" required autocomplete="on">
     </div>
-    <div class="form-group terms">
-        <input type="checkbox" id="terms" required>
-        <label for="terms">I agree to all terms and conditions.</label>
+  </div>
+
+  <div class="form-grid">
+    <div class="form-group">
+      <span class="icon"><i class="fa-solid fa-phone"></i></span>
+      <input type="text" id="phone" name="phone" placeholder="Phone No." required autocomplete="off">
     </div>
-    <button type="submit" class="theme-btn bg-dark mt-35" data-loading-text="Please wait...">
-        <span class="link-effect">
-            <span class="btn-title">Send Message</span>
-        </span><i class="fa-regular fa-arrow-right-long"></i>
-    </button>
+    <div class="form-group">
+      <select class="custom-select" id="service" name="service" autocomplete="off">
+        <option value="" disabled selected>What interests you most?</option>
+        <option value="energy">Energy Healing and Inner Child Work</option>
+        <option value="coaching">Life and Finance Coaching</option>
+        <option value="numerology">Numerology Reading</option>
+        <option value="courses">Online Courses</option>
+        <option value="workshops">Workshops and Events</option>
+        <option value="certification">Certifications and Programs</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <textarea id="msg" name="msg" placeholder="Write Message" required></textarea>
+  </div>
+
+  <div class="form-group terms">
+    <input type="checkbox" id="terms" required>
+    <label for="terms">I agree to all terms and conditions.</label>
+  </div>
+
+  <button type="submit" class="theme-btn bg-dark mt-35">
+    <span class="link-effect">
+      <span class="btn-title">Send Message</span>
+    </span><i class="fa-regular fa-arrow-right-long"></i>
+  </button>
 </form>
+
 
                         </div>
                     </div>
@@ -530,6 +535,36 @@ Andhra Pradesh</p>
     
     <!-- Main Js File -->
     <script src="assets/js/main.js"></script>
+<script>
+document.getElementById('contact_form').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  // Disable button to prevent multiple clicks
+  const btn = this.querySelector('button');
+  btn.disabled = true;
+  btn.innerHTML = "Sending...";
+
+  emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+    .then(function(response) {
+      alert('Message sent successfully!');
+      btn.disabled = false;
+      btn.innerHTML = '<span class="link-effect"><span class="btn-title">Send Message</span></span><i class="fa-regular fa-arrow-right-long"></i>';
+      document.getElementById('contact_form').reset();
+    }, function(error) {
+      alert('Failed to send message. Please try again later.');
+      console.error('EmailJS error:', error);
+      btn.disabled = false;
+      btn.innerHTML = '<span class="link-effect"><span class="btn-title">Send Message</span></span><i class="fa-regular fa-arrow-right-long"></i>';
+    });
+});
+</script>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function(){
+    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS Public Key
+  })();
+</script>
+
 
 </body>
 
