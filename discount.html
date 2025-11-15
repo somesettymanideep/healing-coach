@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <title>Gallery</title>
+    <meta content="gallery" name="description">
+    <meta content="gallery" name="keywords">
+    <meta content="INDEX,FOLLOW" name="robots">
+
+    <!-- Mobile Specific Metas -->
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+    <!-- Favicons - Place favicon.ico in the root directory -->
+    <link href="assets/images/favicons/favicon.png" rel="icon" sizes="32x32" type="image/png">
+    <meta content="#ffffff" name="msapplication-TileColor">
+    <meta content="#ffffff" name="theme-color">
+
+    <!--==============================
+	  Google Fonts
+	============================== -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!--==============================
+	    All CSS File
+	============================== -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+    <link href="assets/css/fancybox.min.css" rel="stylesheet">
+    <link href="assets/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/select2.min.css" rel="stylesheet">
+    <link href="assets/css/jquery-ui.min.css" rel="stylesheet">
+    <link href="assets/css/odometer.css" rel="stylesheet">
+    <!-- Theme Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+    
+    .card {
+        background: white;
+        padding: 25px;
+        max-width: 450px;
+        margin: auto;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .price-box {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    .strike {
+        text-decoration: line-through;
+        color: red;
+        font-weight: bold;
+    }
+    .success { color: green; }
+    .error { color: red; }
+    button {
+        padding: 12px 20px;
+        width: 100%;
+        border: none;
+        background: #4a2cff;
+        color: white;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: 1px solid #aaa;
+        border-radius: 6px;
+    }
+</style>
+
+</head>
+
+<body id="body">
+
+    <div class="page-wrapper">
+
+        <!--==============================
+        Preloader
+        ==============================-->
+         <div class="loading-screen" id="loading-screen">
+            <div class="preloader-close">x</div>
+            <div class="animation-preloader">
+                <div class="txt-loading">
+                    <span data-text-preloader="p" class="letters-loading">P</span>
+                    <span data-text-preloader="a" class="letters-loading">a</span>
+                    <span data-text-preloader="d" class="letters-loading">d</span>
+                    <span data-text-preloader="m" class="letters-loading">m</span>
+                    <span data-text-preloader="a" class="letters-loading">a</span>
+                    <span data-text-preloader="p" class="letters-loading">P</span>
+                    <span data-text-preloader="a" class="letters-loading">a</span>
+                    <span data-text-preloader="p" class="letters-loading">v</span>
+                    <span data-text-preloader="p" class="letters-loading">a</span>
+                    <span data-text-preloader="a" class="letters-loading">n</span>
+                    <span data-text-preloader="p" class="letters-loading">i</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!--==============================
+        Header Area
+        ==============================-->
+       <header class="nav-header header-style4">
+            <div class="header-top">
+                <div class="inner-container">
+                    <div class="top-left">
+                        <ul class="list-style-1">
+                            <li class="text-white">India's Leading Certified Law of Attraction Coach and Healer</li>
+                            <li><a class="text-white" href="mailto:healandgrowwithpadma@gmail.com"><i class="icon fa-regular fa-envelope text-white"></i>healandgrowwithpadma@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="outer-box">
+                        <ul class="social-icon-one">
+                            <li><span class="menu-follow_title text-white">Follow Us :</span></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f text-white"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-x-twitter text-white"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram text-white"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube text-white"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sticky-wrapper">
+                <div class="main-wrapper">
+                    <!-- Main Menu Area -->
+                    <div class="menu-area">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-auto logo">
+                                <div class="header-logo">
+                                    <a href="index.html">
+                                        <img alt="logo" class="h-logo" src="assets/images/logo/final-logo-page.png">
+                                        <img alt="logo" class="h-logo" src="assets/images/logo/final-logo-page.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-auto nav-menu">
+                                <nav class="main-menu d-none d-lg-inline-block lh-1 lh-1">
+                                    <ul class="navigation">
+                                        <li >
+                                            <a href="./">Home</a>
+                                           
+                                        </li>
+                                        <li >
+                                            <a href="about.html">About</a>
+                                           
+                                        </li>
+                                         <li class="">
+                                            <a href="service.html">Our Services</a>
+                                           
+                                        </li>
+                                        <li class="">
+                                            <a href="courses.html">Courses</a>
+                                            
+                                        </li>
+                                        <li class="active ">
+                                            <a href="gallery.html">Gallery</a>
+                                            
+                                        </li>
+                                       
+                                       
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </nav>
+                                <div class="navbar-right d-inline-flex d-lg-none">
+                                    <button class="menu-toggle sidebar-btn" type="button">
+                                        <span class="line"></span>
+                                        <span class="line"></span>
+                                        <span class="line"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-auto header-right-wrapper">
+                                <div class="header-right">
+                                   
+                                    <a href="https://rzp.io/rzp/QP3rqRdJ" class="theme-btn bg-theme">
+                                        <span class="link-effect">
+                                           <span class="effect-1">Book a Session</span>
+                                            <span class="effect-1">Book a Session</span>
+                                        </span><i class="fa-regular fa-arrow-right-long" style="color: white !important;;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--==============================
+        Mobile Menu
+        ============================== -->
+        <div class="mobile-menu-wrapper">
+            <div class="mobile-menu-area">
+                <button class="menu-toggle"><i class="fas fa-times"></i></button>
+                <div class="mobile-logo">
+                   <img alt="logo" width="90" src="assets/images/logo/final-logo-page.png">
+                </div>
+                <div class="mobile-menu">
+                    <ul class="navigation clearfix">
+                        <!--Keep This Empty / Menu will come through Javascript-->
+                    </ul>
+                </div>
+                <div class="sidebar-wrap">
+                    <h6> Srama shakti Nagar, Near Sarada Peetam,</h6>
+                    <h6> Chinnamushidiwada Visakhapatnam – 531173 Andhra Pradesh</h6>
+                </div>
+                <div class="sidebar-wrap">
+                    <h6><a href="tel:+ 91 9133966553">+ 91 9133966553 </a></h6>
+                    <h6><a href="mailto:healandgrowwithpadma@gmail.com">healandgrowwithpadma@gmail.com</a></h6>
+                </div>
+                <div class="social-btn style3">
+                    <a href="https://www.facebook.com/share/16aHkz7LsC/">
+                        <span class="link-effect">
+                            <span class="effect-1"><i class="fab fa-facebook"></i></span>
+                            <span class="effect-1"><i class="fab fa-facebook"></i></span>
+                        </span>
+                    </a>
+                    <a href="https://www.instagram.com/healandgrowwithpadma?utm_source=qr&igsh=d2Z5ZjdmdWU1dTVm">
+                        <span class="link-effect">
+                            <span class="effect-1"><i class="fab fa-instagram"></i></span>
+                            <span class="effect-1"><i class="fab fa-instagram"></i></span>
+                        </span>
+                    </a>
+                    <a href="https://www.youtube.com/@HealandGrowwithPadma">
+                        <span class="link-effect">
+                            <span class="effect-1"><i class="fab fa-youtube"></i></span>
+                            <span class="effect-1"><i class="fab fa-youtube"></i></span>
+                        </span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/padma-pavani-3b5a23129?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                        <span class="link-effect">
+                            <span class="effect-1"><i class="fab fa-linkedin-in"></i></span>
+                            <span class="effect-1"><i class="fab fa-linkedin-in"></i></span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!--==============================
+        Sticky Header
+        ============================== -->
+      <div class="sticky-header">
+            <div class="container">
+                <!-- Main Menu Area -->
+                <div class="menu-area">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-auto logo">
+                            <div class="header-logo">
+                                <a href="index.html">
+                                    <img alt="logo" class="h-logo" src="assets/images/logo/final-logo-page.png">
+                                    <img alt="logo" class="h-logo" src="assets/images/logo/final-logo-page.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-auto nav-menu">
+                            <nav class="main-menu d-none d-lg-inline-block">
+                                <ul class="navigation clearfix">
+                                    <!--Keep This Empty / Menu will come through Javascript-->
+                                </ul>
+                            </nav>
+                            <div class="navbar-right d-inline-flex d-lg-none">
+                                <button class="menu-toggle sidebar-btn" type="button">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Header Area -->
+
+        <!-- Header Search -->
+        <div class="search-popup">
+            <button class="close-search"><i class="fa-solid fa-xmark"></i></button>
+            <form method="post" action="blog-list.html">
+                <div class="form-group">
+                    <input id="search" type="search" name="search" placeholder="Search..." required="">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
+        </div>
+        <!-- End Header Search -->
+
+        <!-- Start Breadcrumb Section -->
+        <!-- ========================================== -->
+        <section class="breadcrumb-section">
+            <div class="bg bg-image" style="background-image: url(assets/images/testimonial/about-page.png)"></div>
+            <div class="container">
+                <div class="title-outer">
+                    <div class="page-title">
+                        <h2 class="title">Cart</h2>
+                        <ul class="page-breadcrumb">
+                            <li><a href="index.html">Home Main</a></li>
+                            <li>cart</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- ========================================== -->
+        <!-- End Breadcrumb Section -->
+        
+<section class="bg-theme3 pt-5 pb-5">
+    <title>Subconscious Mind Programming - Payment</title>
+
+
+
+<div class="card">
+    <h2>Subconscious Mind Programming</h2>
+
+    <div class="price-box">
+        <p><strong>Original Price:</strong> 
+            <span id="originalPrice">₹6000</span>
+            <span id="discountPrice" style="display:none; color:green; font-weight:bold;"> → ₹1499</span>
+        </p>
+
+        <p id="discountRow" style="display:none;">
+            <strong>Discount:</strong> ₹4501
+        </p>
+
+        <p id="totalRow">
+            <strong>Total Amount:</strong> <span id="totalAmount">₹6000</span>
+        </p>
+    </div>
+
+    <input type="text" id="coupon" placeholder="Enter Coupon Code">
+    <button onclick="applyCoupon()">Apply Coupon</button>
+
+    <p id="success" class="success" style="display:none;"></p>
+    <p id="error" class="error" style="display:none;"></p>
+
+    <button id="pay6000" onclick="pay6000()">Pay Now ₹6000</button>
+    <button id="pay1499" style="display:none; background:#09a62b;" onclick="pay1499()">Pay Now ₹1499</button>
+</div>
+
+
+</section>
+
+
+        <!--==============================
+        Newsletter Section
+        ==============================-->
+         <section class="newsletter-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="newsletter">
+                           
+                            <div class="text">
+                                <h3>Ready to Redesign Your Life?</h3>
+                            </div>
+                            <div class="contact-info">
+                                
+                                 <a href="https://rzp.io/rzp/QP3rqRdJ" target="_blank" class="theme-btn bg-y">
+                                    <span class="link-effect">
+                                        <span class="effect-1 ">Book Your Consultation
+</span>
+                                        <span class="effect-1">Book Your Consultation
+</span>
+                                    </span><i class="fa-regular fa-arrow-right-long"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==============================
+            Footer Section
+        ==============================-->
+      <footer class="footer-section bg-dark">
+            <div class="footer-top pb-50 pt-50">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6 footer-brand">
+                            <div class="brand-header">
+                                <a href="index.html" class="footer-logo d-block mb-20"><img src="assets/images/logo/final-logo-page.png" width="100" alt=""></a>
+                                <p class="text text-white">India's Leading Certified Law of Attraction Coach and Healer </p>
+                            </div>
+                            <div class="social-links">
+                                        <a target="_blank" href="https://www.facebook.com/share/16aHkz7LsC/" class="social-icon text-white"><i class="fab fa-facebook-f"></i></a>
+                                        <a target="_blank" href="https://www.instagram.com/healandgrowwithpadma?utm_source=qr&igsh=d2Z5ZjdmdWU1dTVm" class="social-icon text-white"><i class="fab fa-instagram"></i></a>
+                                        <a target="_blank" href="https://www.linkedin.com/in/padma-pavani-3b5a23129?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icon text-white"><i class="fab fa-linkedin-in"></i></a>
+                                        <a  target="_blank" href="https://www.youtube.com/@HealandGrowwithPadma" class="social-icon text-white"><i class="fab fa-youtube"></i></a>
+                                    </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 p-0 sm-pl-15">
+                                    <div class="footer-widget">
+                                        <h4 class="title">Quick links</h4>
+                                        <ul class="list-unstyled">
+                                            <li><a href="about.html" class="text-white">About us</a></li>
+                                            <li><a href="service.html" class="text-white">Our Services</a></li>
+                                            <li><a href="courses.html" class="text-white">Courses</a></li>
+
+                                            <li><a href="contact.html" class="text-white">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8 p-0 sm-pl-15">
+                                    <div class="footer-widget">
+                                        <h4 class="title">Services</h4>
+                                        <ul class="list-unstyled">
+                                            <li ><a href="service.html" class="text-white">Aura Reset - Heal from Within</a></li>
+                                            <li><a href="service.html" class="text-white">Ho'oponopono (Advanced Hawaiian Healing)</a></li>
+                                            <li><a href="service.html" class="text-white">Innerchild Healing </a></li>
+                                            <li><a href="service.html" class="text-white">90 Days Transformational Healing</a></li>
+                                            <li><a href="service.html" class="text-white">Daily Magic Frequency Balance</a></li>
+                                            <li><a href="service.html" class="text-white">Law of Attraction</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                       
+                        <div class="col-lg-3 col-md-4">
+                            <div class="footer-widget ml-0 mb-0">
+                                 <h4 class="title">Contact us</h4>
+                                 <p class="text-white"> Srama shakti Nagar, Near Sarada Peetam, Chinnamushidiwada
+Visakhapatnam – 531173
+Andhra Pradesh</p>
+                                    <p ><a class="email text-white" href="mailto:healandgrowwithpadma@gmail.com">healandgrowwithpadma@gmail.com</a></p>
+                                    <p ><a class="number text-white" href="tel:+ 91 9133966553">+ 91 9133966553</a></p>
+                               
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <p class="mb-0 text-white">&copy;2025 - All Rights Reserved by <a href="">Padmapavani</a> Designed by <a href="tel:8919506273">Manideep</a></p>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    
+    </div><!-- End Page Wrapper -->
+
+
+    <!-- Scroll To Top -->
+    <div class="scroll-top">
+        <svg class="progress-circle svg-content" height="100%" viewBox="-1 -1 102 102" width="100%">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+                style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
+        </svg>
+    </div>
+
+<script>
+function applyCoupon() {
+    const code = document.getElementById("coupon").value.trim();
+    const successMsg = document.getElementById("success");
+    const errorMsg = document.getElementById("error");
+    const originalPrice = document.getElementById("originalPrice");
+    const discountPrice = document.getElementById("discountPrice");
+    const discountRow = document.getElementById("discountRow");
+    const totalAmount = document.getElementById("totalAmount");
+
+    const pay6000 = document.getElementById("pay6000");
+    const pay1499 = document.getElementById("pay1499");
+
+    successMsg.style.display = "none";
+    errorMsg.style.display = "none";
+    discountPrice.style.display = "none";
+    discountRow.style.display = "none";
+
+    if (code.toUpperCase() === "PADHMA60") {
+        successMsg.innerText = "Coupon Applied Successfully!";
+        successMsg.style.display = "block";
+
+        originalPrice.classList.add("strike");
+        discountPrice.style.display = "inline";
+        discountRow.style.display = "block";
+        totalAmount.innerText = "₹1499";
+
+        pay1499.style.display = "block";
+        pay6000.style.display = "none";
+    } 
+    else {
+        errorMsg.innerText = "Invalid Coupon Code";
+        errorMsg.style.display = "block";
+
+        originalPrice.classList.remove("strike");
+        discountPrice.style.display = "none";
+        discountRow.style.display = "none";
+        totalAmount.innerText = "₹6000";
+
+        pay1499.style.display = "none";
+        pay6000.style.display = "block";
+    }
+}
+
+function pay6000() {
+    window.location.href = "https://razorpay.com/payment-link/plink_RX166kxg0TBgLq"; // 6000 link
+}
+
+function pay1499() {
+    window.location.href = "https://rzp.io/rzp/ABBCrz9l"; // 1499 link
+}
+</script>
+
+    <!-- Jquery -->
+    <script src="assets/js/vendor/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/marquee.min.js"></script>
+    <script src="assets/js/jquery.fancybox.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js//jquery.odometer.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/lenis.min.js"></script>
+    <script src="assets/js/splite-type.min.js"></script>
+    <script src="assets/js/vanilla-tilt.min.js"></script>
+    
+    <!-- Main Js File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+
+</html>
